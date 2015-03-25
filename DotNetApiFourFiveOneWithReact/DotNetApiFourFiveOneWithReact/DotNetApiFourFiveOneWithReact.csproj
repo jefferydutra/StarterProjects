@@ -93,12 +93,44 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="gulpfile.js" />
+    <Content Include="gulp\config.js" />
+    <Content Include="gulp\tasks\browserify.js" />
+    <Content Include="gulp\tasks\build.js" />
+    <Content Include="gulp\tasks\buildForRelease.js" />
+    <Content Include="gulp\tasks\default.js" />
+    <Content Include="gulp\tasks\jshint.js" />
+    <Content Include="gulp\tasks\setDebug.js" />
+    <Content Include="gulp\tasks\setRelease.js" />
+    <Content Include="gulp\tasks\setWatch.js" />
+    <Content Include="gulp\tasks\watch.js" />
+    <Content Include="gulp\util\bundleLogger.js" />
+    <Content Include="gulp\util\handleErrors.js" />
+    <Content Include="js\library\src\dispatcher\AppDispatcher.js" />
+    <Content Include="js\library\src\utils\ajaxUtils.js" />
+    <Content Include="js\library\src\utils\validators.js" />
+    <Content Include="js\vendor\bootstrap.js" />
+    <Content Include="js\vendor\bootstrap.min.js" />
+    <Content Include="js\vendor\es5sham.min.js" />
+    <Content Include="js\vendor\es5shim.min.js" />
+    <Content Include="js\vendor\html5shivprintshiv.js" />
+    <Content Include="js\vendor\respond.min.js" />
+    <None Include="js\vendor\jquery-1.10.2.intellisense.js" />
+    <Content Include="js\vendor\jquery-1.10.2.js" />
+    <Content Include="js\vendor\jquery-1.10.2.min.js" />
+    <Content Include="js\vendor\modernizr-2.6.2.js" />
     <Content Include="Web.config" />
+    <Content Include="js\vendor\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -107,6 +139,21 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
+    <Content Include=".jshintrc" />
+    <Content Include="package.json" />
+    <Content Include="js\library\src\reactComponents\ErrorAlert.jsx" />
+    <Content Include="js\library\src\reactComponents\FormTextInput.jsx" />
+    <Content Include="js\library\src\reactComponents\SelectInput.jsx" />
+    <Content Include="js\library\src\reactComponents\App.jsx" />
+    <Content Include="js\vendor\es5-sham.map" />
+    <Content Include="js\vendor\es5-shim.map" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -116,8 +163,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
+    <Folder Include="js\library\src\action\" />
+    <Folder Include="js\library\src\constants\" />
+    <Folder Include="js\library\src\stores\" />
+    <Folder Include="js\library\tests\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
