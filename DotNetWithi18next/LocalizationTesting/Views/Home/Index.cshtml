@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<div id="appWrapper">
+
+</div>
+
+@section Scripts
+{
+    <script src="@Url.Content("~/dist/src/app.js")"></script>
+    <script>
+        reactElements.loadApp('appWrapper');
+
+    </script>
+}
