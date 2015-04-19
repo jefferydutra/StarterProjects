@@ -1,6 +1,6 @@
 {
-  "name": "SmartSuite",
-  "version": "8.6.0",
+  "name": "Starter Project",
+  "version": "1.0.1",
   "description": "",
   "main": "tooltip.js",
   "scripts": {
