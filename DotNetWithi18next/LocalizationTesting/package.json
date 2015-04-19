@@ -1,6 +1,6 @@
 {
-  "name": "SmartSuite",
-  "version": "8.6.0",
+  "name": "LocalizationTesting",
+  "version": "0.0.1",
   "description": "",
   "main": "tooltip.js",
   "scripts": {
